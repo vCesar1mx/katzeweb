@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html data-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KS - GROUP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel=stylesheet href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-white border-gray-200 shadow-lg dark:bg-gray-800 dark:border-gray-700">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <!-- Logo -->
+            <a href="#" class="flex items-center">
+                <img src="img/logonb.png" alt="Logo" class="h-16 mix-blend-exclusion">
+            </a>
+            <!-- Mobile Burger Icon -->
+            <button id="navbar-burger" type="button"
+                class="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+
+            <!-- Navbar Menu -->
+            <div id="navbar-menu"
+                class="hidden w-full md:flex md:w-auto md:space-x-8 md:items-center bg-orange md:bg-transparent md:border-none md:static relative top-full left-0 p-4 md:p-0 shadow-md md:shadow-none">
+                <ul class="flex flex-col md:flex-row md:space-x-8 font-medium w-full">
+                    <li>
+                        <a href="#"
+                            class="block px-1 py-2 text-gray-800 hover:text-gray-500 md:text-blue-700 dark:text-white">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block px-1 py-2 text-gray-800 hover:text-gray-500 dark:text-gray-400 dark:hover:text-white">Descargas</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block px-1 py-2 text-gray-800 hover:text-gray-500 dark:text-gray-400 dark:hover:text-white">Github</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block px-1 py-2 text-gray-800 hover:text-gray-500 dark:text-gray-400 dark:hover:text-white">Sponsors</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Scripts -->
+    <script>
+        // JavaScript to toggle the menu
+        document.getElementById('navbar-burger').addEventListener('click', function () {
+            const menu = document.getElementById('navbar-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+
+    <!-- Main Section -->
+    <section class="py-10">
+        <div class="container mx-auto">
+            <div class="bg-white w-full px-4 pt-4 pb-4" id="faq">
+                <h1 class="text-4xl font-bold mb-4 mx-4">KatzeLLC</h1>
+                <p class="text-lg text-gray-600 mb-84 mx-4">
+                    Grupo de empresas dedicadas al sector de <strong>Entretenimiento y Servicios</strong>.
+                </p>
+                <div class="flex flex-wrap">
+                    <div class="bg-white flex justify-center items-center text-center gap-3 w-1/2 flex-wrap">
+
+                        <div class="max-w-sm navy rounded-lg">
+                            <div class="p-5">
+                                <a href="https://tienda.haliacraft.com">
+                                    <img alt="" class="h-32  mx-auto rounded-lg"
+                                        src="https://dunb17ur4ymx4.cloudfront.net/webstore/logos/03adb6f2f50e460a456c67ec3e8274b46926cb8b.png">
+                                    <p class="mb-3 font-normal">HaliaCraft Network <i
+                                            class="fa-regular fa-registered"></i>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="max-w-sm navy rounded-lg">
+                            <div class="p-5">
+                                <a href="https://store.sayer.live">
+                                    <img alt="" class="h-32  mx-auto rounded-lg"
+                                        src="https://dunb17ur4ymx4.cloudfront.net/webstore/logos/20b38add426533ac8bb30afeb905a09afb98b0db.png">
+                                    <p class="mb-3 font-normal">Sayer Network <i class="fa-regular fa-registered"></i>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="max-w-sm navy rounded-lg">
+                            <div class="p-5">
+                                <a href="#">
+                                    <img alt="" class="h-32  mx-auto rounded-lg" src="https://placehold.co/600x400">
+                                    <p class="mb-3 font-normal">*********** eSports <i
+                                            class="fa-regular fa-registered"></i>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white flex justify-center items-center text-center gap-3 w-1/2 flex-wrap">
+
+                        <div class=flex items-center justify-center dark:bg-gray-900">
+                            <!-- Author card -->
+                            <div
+                                class="relative w-full max-w-2xl my-8 md:my-16 flex flex-col items-start space-y-4 sm:flex-row sm:space-y-0 sm:space-x-6 px-4 py-8 border-2 border-dashed border-gray-400 dark:border-gray-400 shadow-lg rounded-lg">
+
+                                <span
+                                    class="absolute text-xs font-medium top-0 left-0 rounded-br-lg rounded-tl-lg px-2 py-1 bg-primary-100 dark:bg-gray-900 dark:text-gray-300 border-gray-400 dark:border-gray-400 border-b-2 border-r-2 border-dashed ">
+                                    author
+                                </span>
+
+                                <div class="w-full flex justify-center sm:justify-start sm:w-auto">
+                                    <img class="object-cover w-20 h-20 mt-3 mr-3 rounded-full"
+                                        src="https://lh3.googleusercontent.com/a/AEdFTp70cvwI5eevfcr4LonOEX5gB2rzx7JnudOcnYbS1qU=s96-c">
+                                </div>
+
+                                <div class="w-full sm:w-auto flex flex-col items-center sm:items-start">
+
+                                    <p class="font-display mb-2 text-2xl font-semibold dark:text-gray-200"
+                                        itemprop="author">
+                                        Prajwal Hallale
+                                    </p>
+
+                                    <div class="mb-4 md:text-lg text-gray-400">
+                                        <p>Prajwal is a versatile content writer with a strong background in web
+                                            development.</p>
+                                    </div>
+
+                                    <div class="flex gap-4">
+
+                                        <a title="youtube url" href="https://www.youtube.com/@mcqmate" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <svg class="h-6 w-6 dark:text-gray-300" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M20.5949 4.45999C21.5421 4.71353 22.2865 5.45785 22.54 6.40501C22.9982 8.12001 23 11.7004 23 11.7004C23 11.7004 23 15.2807 22.54 16.9957C22.2865 17.9429 21.5421 18.6872 20.5949 18.9407C18.88 19.4007 12 19.4007 12 19.4007C12 19.4007 5.12001 19.4007 3.405 18.9407C2.45785 18.6872 1.71353 17.9429 1.45999 16.9957C1 15.2807 1 11.7004 1 11.7004C1 11.7004 1 8.12001 1.45999 6.40501C1.71353 5.45785 2.45785 4.71353 3.405 4.45999C5.12001 4 12 4 12 4C12 4 18.88 4 20.5949 4.45999ZM15.5134 11.7007L9.79788 15.0003V8.40101L15.5134 11.7007Z"
+                                                    stroke="currentColor" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </a>
+
+                                        <a title="website url" href="https://mcqmate.com/" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <svg class="h-6 w-6 dark:text-gray-300" xmlns="http://www.w3.org/2000/svg"
+                                                fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                                stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+            </div>
+    </section>
+
+
+
+    <footer class="p-4 bg-white sm:p-6 dark:bg-gray-800">
+        <div class="mx-auto max-w-screen-xl">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <a href="https://flowbite.com" class="flex items-center">
+                        <img src="img/logonb.png" class="mr-3 h-16 mix-blend-exclusion" alt="FlowBite Logo" />
+                        <!-- span
+                            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span  !-->
+                    </a>
+                </div>
+                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 justify-items-end">
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">FUNDADORES</h2>
+                        <ul class="text-gray-600 dark:text-gray-400">
+                            <li class="mb-4">
+                                <a href="https://flowbite.com" class="hover:underline">FacuCARP</a>
+                            </li>
+                            <li>
+                                <a href="https://tailwindcss.com/" class="hover:underline">vCesar</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">CONTACTO</h2>
+                        <ul class="text-gray-600 dark:text-gray-400">
+                            <li class="mb-4">
+                                <a href="https://flowbite.com" class="hover:underline">facu@katzellc.com</a>
+                            </li>
+                            <li>
+                                <a href="https://tailwindcss.com/" class="hover:underline">cesar@katzellc.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contacto Legal
+                        </h2>
+                        <ul class="text-gray-600 dark:text-gray-400">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">legales@katzellc.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a
+                        href="https://flowbite.com" class="hover:underline">KatzeLLC™</a>. All Rights
+                    Reserved.
+                </span>
+                <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
